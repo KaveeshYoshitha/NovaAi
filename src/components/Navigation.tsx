@@ -21,12 +21,12 @@ export function Navigation() {
             transition={{ type: "spring", stiffness: 400 }}
           >
             <motion.div
-              className="w-8 h-8 rounded-lg bg-gradient-to-br from-purple-500 to-fuchsia-500 flex items-center justify-center shadow-lg shadow-purple-500/50"
+              className="w-8 h-8 rounded-lg bg-linear-to-br from-purple-500 to-fuchsia-500 flex items-center justify-center shadow-lg shadow-purple-500/50"
               animate={{
                 boxShadow: [
-                  '0 4px 15px rgba(168, 85, 247, 0.5)',
-                  '0 4px 20px rgba(168, 85, 247, 0.7)',
-                  '0 4px 15px rgba(168, 85, 247, 0.5)',
+                  "0 4px 15px rgba(168, 85, 247, 0.5)",
+                  "0 4px 20px rgba(168, 85, 247, 0.7)",
+                  "0 4px 15px rgba(168, 85, 247, 0.5)",
                 ],
               }}
               transition={{
@@ -38,9 +38,9 @@ export function Navigation() {
               <Sparkles className="w-4 h-4 text-white" />
             </motion.div>
             <motion.span
-              className="text-xl font-extrabold bg-gradient-to-r from-purple-400 via-fuchsia-400 to-purple-400 bg-clip-text text-transparent [background-size:200%_200%]"
+              className="text-xl font-extrabold bg-linear-to-r from-purple-400 via-fuchsia-400 to-purple-400 bg-clip-text text-transparent bg-size-[200%_200%]"
               animate={{
-                backgroundPosition: ['0% 50%', '100% 50%', '0% 50%'],
+                backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
               }}
               transition={{
                 duration: 5,
@@ -54,7 +54,7 @@ export function Navigation() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
-            {['Features', 'Pricing', 'Testimonials', 'About'].map((item, idx) => (
+            {["Features", "Pricing", "Testimonials"].map((item, idx) => (
               <motion.a
                 key={item}
                 href={`#${item.toLowerCase()}`}
@@ -66,7 +66,7 @@ export function Navigation() {
               >
                 {item}
                 <motion.div
-                  className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-purple-400 to-fuchsia-400 origin-left"
+                  className="absolute -bottom-1 left-0 right-0 h-0.5 bg-linear-to-r from-purple-400 to-fuchsia-400 origin-left"
                   initial={{ scaleX: 0 }}
                   whileHover={{ scaleX: 1 }}
                   transition={{ duration: 0.3 }}
@@ -95,7 +95,7 @@ export function Navigation() {
             className="md:hidden mt-6 pb-4 border-t border-purple-400/20 pt-6"
           >
             <div className="flex flex-col gap-4">
-              {['Features', 'Pricing', 'Testimonials', 'About'].map((item) => (
+              {["Features", "Pricing", "Testimonials"].map((item) => (
                 <motion.a
                   key={item}
                   href={`#${item.toLowerCase()}`}

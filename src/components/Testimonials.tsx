@@ -41,7 +41,7 @@ export function Testimonials() {
 
   const prev = () => {
     setCurrent(
-      (prev) => (prev - 1 + testimonials.length) % testimonials.length
+      (prev) => (prev - 1 + testimonials.length) % testimonials.length,
     );
   };
 
@@ -51,7 +51,10 @@ export function Testimonials() {
   }, []);
 
   return (
-    <section className="relative py-32 bg-gradient-to-b from-black via-indigo-950/20 to-black overflow-hidden">
+    <section
+      className="relative py-32 bg-gradient-to-b from-black via-indigo-950/20 to-black overflow-hidden"
+      id="testimonials"
+    >
       {/* Background glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-purple-600/10 rounded-full blur-3xl"></div>
 

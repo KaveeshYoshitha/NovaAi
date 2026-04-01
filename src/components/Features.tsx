@@ -5,28 +5,32 @@ const features = [
   {
     icon: MessageSquare,
     title: "Smart Chat Assist",
-    description: "Intelligent conversations that understand context and provide accurate responses in real-time.",
+    description:
+      "Intelligent conversations that understand context and provide accurate responses in real-time.",
   },
   {
     icon: Zap,
     title: "Workflow Automation",
-    description: "Automate repetitive tasks and streamline your processes with AI-powered workflows.",
+    description:
+      "Automate repetitive tasks and streamline your processes with AI-powered workflows.",
   },
   {
     icon: FileText,
     title: "Content Generation",
-    description: "Generate high-quality content, from emails to reports, in seconds with advanced AI.",
+    description:
+      "Generate high-quality content, from emails to reports, in seconds with advanced AI.",
   },
   {
     icon: BarChart3,
     title: "Real-Time Insights",
-    description: "Get actionable insights and analytics to make data-driven decisions instantly.",
+    description:
+      "Get actionable insights and analytics to make data-driven decisions instantly.",
   },
 ];
 
 export function Features() {
   return (
-    <section className="relative py-32 bg-black overflow-hidden">
+    <section className="relative py-32 bg-black overflow-hidden" id="features">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-black via-indigo-950/20 to-black"></div>
 
@@ -76,9 +80,7 @@ export function Features() {
                   </motion.div>
 
                   {/* Title */}
-                  <h3 className="text-xl mb-3 text-white">
-                    {feature.title}
-                  </h3>
+                  <h3 className="text-xl mb-3 text-white">{feature.title}</h3>
 
                   {/* Description */}
                   <p className="text-purple-200/60 leading-relaxed">
